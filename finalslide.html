@@ -1,0 +1,70 @@
+<!doctype html>
+
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.7/dist/css/splide.min.css" />
+    <style>
+        .splide__slide .slideimg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slider-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 0px;
+        }
+img { width:100%;}
+
+        .splide__arrow {
+            display: none; /* Hide arrows by default */
+        }
+
+        /* Show arrows on larger screens */
+        @media only screen and (min-width: 768px) {
+            .splide__arrow {
+                display: block;
+            }
+        }
+    </style>
+
+
+    <div class="slider-container">
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="slideimg">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsKInOh6y4mH5ydmG26FW5guk8aUem_Syko0m-9ageWhP5sOv1H02ymzq1J8J9rys8L4MkXDQ-LEIhKspHjGsAifFCh_NHHopXhKi5noSZjpyYXpTtOb9X5-u2iJbq542m9GVyFEqu6D3NnHRrduVB2KEkWrHI4Y9NAlUFV4w49poymFb-bj3Q0mAuCY/s1600/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.jpg"
+                                alt="Image 01" />
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slideimg">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsKInOh6y4mH5ydmG26FW5guk8aUem_Syko0m-9ageWhP5sOv1H02ymzq1J8J9rys8L4MkXDQ-LEIhKspHjGsAifFCh_NHHopXhKi5noSZjpyYXpTtOb9X5-u2iJbq542m9GVyFEqu6D3NnHRrduVB2KEkWrHI4Y9NAlUFV4w49poymFb-bj3Q0mAuCY/s1600/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.jpg"
+                                alt="Image 02" />
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slideimg">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsKInOh6y4mH5ydmG26FW5guk8aUem_Syko0m-9ageWhP5sOv1H02ymzq1J8J9rys8L4MkXDQ-LEIhKspHjGsAifFCh_NHHopXhKi5noSZjpyYXpTtOb9X5-u2iJbq542m9GVyFEqu6D3NnHRrduVB2KEkWrHI4Y9NAlUFV4w49poymFb-bj3Q0mAuCY/s1600/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.jpg"
+                                alt="Image 03" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('#image-slider', {
+            autoplay: true, // Mengatur slider menjadi otomatis
+            interval: 5000, // Interval waktu dalam milidetik antara setiap slide
+            rewind: true // Mengatur slider untuk berulang
+        }).mount();
+    </script>
+
+</!doctype>
