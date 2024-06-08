@@ -16,7 +16,16 @@
             max-width: 800px;
             margin: 0 auto;
         }
+
+        .splide__arrow--prev {
+            display: none;
+        }
+
+        .splide__arrow--next {
+            display: none;
+        }
     </style>
+
 
 
 
@@ -43,11 +52,13 @@
 
     <script src="https://cdn.jsdelivr.net/gh/aremafans98/a@master/slide.js"></script>
     <script>
-         new Splide('#image-slider', {
+        new Splide('#image-slider', {
             autoplay: true, // Mengatur slider menjadi otomatis
             interval: 3000, // Interval waktu dalam milidetik antara setiap slide
             rewind: true // Mengatur slider untuk berulang
-        }).mount();    </script>
+        }).mount();
+    </script>
+
 
 
 </!doctype>
